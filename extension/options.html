@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Chrome Tabs MCP</title>
+    <style>
+      body { font: 14px system-ui, sans-serif; margin: 16px; min-width: 380px; }
+      label { display: block; margin: 12px 0 4px; font-weight: 600; }
+      input { width: 100%; box-sizing: border-box; padding: 6px; font: inherit; }
+      button { margin-top: 12px; padding: 6px 14px; font: inherit; }
+      code { background: #8882; padding: 1px 4px; border-radius: 3px; }
+      #status { margin-top: 12px; }
+    </style>
+  </head>
+  <body>
+    <p>Run <code>node src/index.js token</code> in the chrome-tabs-mcp folder and paste the token here.</p>
+    <label for="token">Token</label>
+    <input id="token" type="password" autocomplete="off" />
+    <label for="port">Port</label>
+    <input id="port" type="number" min="1024" max="65535" />
+    <button id="save">Save</button>
+    <div id="status"></div>
+    <script src="options.js"></script>
+  </body>
+</html>

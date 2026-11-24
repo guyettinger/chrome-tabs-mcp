@@ -1,0 +1,27 @@
+{
+  "name": "chrome-tabs-mcp",
+  "version": "0.1.0",
+  "description": "MCP server + Chrome extension that let agents list, group, sort, and dedupe Chrome tabs",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "token": "node src/index.js token",
+    "test": "node --test"
+  },
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "ws": "^8.23.0",
+    "zod": "^4.6.7"
+  },
+  "bin": {
+    "chrome-tabs-mcp": "src/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
